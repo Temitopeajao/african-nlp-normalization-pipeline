@@ -1,0 +1,17 @@
+PRESERVED_CHARS = {
+    "yoruba": set("ẹọṣạẸỌṢẠáéíóúàèìòùâêîôûāēīōū"),
+    "igbo": set("ịọụṅĩṇ"),
+    "hausa": set("ƙɗƴɓ"),
+    "twi": set("ɛɔ"),
+}
+
+OCR_ARTIFACTS = {
+    "l1_confusion": {"l": "1", "I": "1"},
+    "diacritic_split": {
+        "a\u0301": "á",
+        "e\u0300": "è",
+        "o\u0323": "ọ",
+    }
+}
+
+CODESWITCHING_THRESHOLD = 0.3
